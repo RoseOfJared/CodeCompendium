@@ -1,0 +1,32 @@
+Shader "BasicShader"
+{
+	Properties
+	{
+		//the properties of your shaders
+		// - textures
+		// - colours
+		// - parameters
+		//
+	}
+	
+	SubShader
+	{
+		//The code of your shaders
+		// - Surface shader
+		//		OR
+		// - vertex and fragment shader
+		//		OR 
+		// - fixed function shader 
+		
+		Tags
+		{
+		//"Queue" = "Geometry"
+		//"RenderType" = "Opaque"
+		}
+		CGPROGRAM
+		// Cg / HLSL code of the shader
+		// ...
+		ENDCG
+	}
+	
+}

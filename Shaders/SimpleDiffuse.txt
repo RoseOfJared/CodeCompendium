@@ -1,0 +1,20 @@
+Shader "Example/Diffuse Simple" {
+	SubShader {
+		Tags { "RenderType" = "Opaque" }
+		CGPROGRAM
+		
+		#pragma surface surf Lambert
+		
+		struct Input 
+		{
+		float4 color : COLOR;
+		};
+		
+		void Surf (Input IN, inout SurfaceOutput o)
+		{
+			o.albedo = 1; // 1 = (1,1,1,1) = white
+		}
+		ENDCG
+	}
+	Fallback "Diffuse"
+}
